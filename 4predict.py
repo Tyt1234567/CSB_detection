@@ -1,3 +1,12 @@
+"""
+Step 4 - Run inference on large GeoTIFF scenes and export predictions.
+
+Tiles a large image with an 8192 px sliding window (10% overlap), then
+sub-tiles each window to 512 px for Mask R-CNN inference, stitches the
+predicted masks back into a scene-sized mask, extracts contours, and
+converts them to geo-referenced polygons saved as a Shapefile.
+"""
+
 import cv2
 import numpy as np
 import rasterio

@@ -1,3 +1,12 @@
+"""
+Step 1 - Clip training tiles from large GeoTIFF imagery.
+
+Reads color-steel building polygons from a shapefile, converts their
+coordinates to pixel space, crops an appropriately sized tile around each
+polygon (512 / 1024 / 2048 px depending on object size), and writes out the
+cropped PNG tiles together with a COCO-format annotation file.
+"""
+
 import json
 import geopandas as gpd
 import numpy as np

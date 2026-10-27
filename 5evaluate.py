@@ -1,3 +1,10 @@
+"""
+Step 5 - Evaluate predictions against ground truth.
+
+Rasterizes the predicted and ground-truth Shapefiles onto a common grid and
+computes pixel-level precision, recall, and F1 score.
+"""
+
 import rasterio
 import numpy as np
 import geopandas as gpd

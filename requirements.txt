@@ -1,0 +1,13 @@
+numpy
+opencv-python
+rasterio
+geopandas
+shapely
+tqdm
+torch
+torchvision
+
+# Detectron2 is not published on PyPI in a way that works for every
+# torch/CUDA combination. Install it separately following the official
+# instructions for your platform:
+# https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md

@@ -1,3 +1,12 @@
+"""
+Step 3 - Train a Mask R-CNN model (Detectron2) on the merged dataset.
+
+Registers the train/validation COCO datasets produced by `2merge_json_tif.py`,
+then fine-tunes a `mask_rcnn_R_50_FPN_3x` model to segment color-steel
+buildings. Includes a custom trainer that logs proposal-level
+positive/negative statistics and an optional RPN proposal visualization hook.
+"""
+
 import os
 import torch
 import torch.nn as nn

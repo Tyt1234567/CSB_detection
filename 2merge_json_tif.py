@@ -1,3 +1,12 @@
+"""
+Step 2 - Merge per-region tiles and COCO annotations into one dataset.
+
+Walks the output folders produced by `1clip.py`, renumbers image and
+annotation ids so they are globally unique, copies/renames the tile images
+into a single folder, and writes one combined `coco_annotations.json` ready
+for training.
+"""
+
 import os
 import shutil
 import json
